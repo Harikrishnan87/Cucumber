@@ -31,7 +31,9 @@ public class Implementation {
 	@Given("^User is on Home Page$")
 	public void user_is_on_Home_Page() throws Throwable {
 		driver = new FirefoxDriver();		
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);		
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);	
+		
+		System.out.println("home");
 			    
 	}
 
@@ -39,7 +41,8 @@ public class Implementation {
 	public void user_Navigate_to_LogIn_Page() throws Throwable {
 		
 		 driver.get("http://downloads.smartbear.com/samples/TestComplete10/WebOrders/Login.aspx?");
-			  
+			
+		 System.out.println("login");
 	    
 	}
 
